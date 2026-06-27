@@ -3,7 +3,7 @@ toc:
   depth_to: 1
 ---
 
-# #火车头
+# 火车头
 
 ```cpp
 // #include <iostream>
@@ -50,7 +50,7 @@ const int N = 10 + 10, M = N + 10, K = 10;
 int n,m;
 int h[N],e[M],w[M],ne[M],idx;
 ```
-# #随机数组生成
+# 随机数组生成
 
 ```cpp
 #include <iostream>
@@ -98,7 +98,7 @@ int main() {
 ```
 
 
-# #矩阵数据类型
+# 矩阵数据类型
 
 ```cpp
 struct MATRIX {
@@ -123,7 +123,7 @@ struct MATRIX {
 };
 ```
 
-# #离散化
+# 离散化
 
 ```cpp
 struct Discretization{
@@ -143,7 +143,7 @@ struct Discretization{
 }D;
 ```
 
-# #快读整数
+# 快读整数
 
 快速读入整数
 
@@ -159,7 +159,7 @@ inline int read() {
     return y == '-' ? -x : x; // 返回负数
 }
 ```
-# #双指针
+# 双指针
 
 for循环拓展右端点，左端点收缩，这样好写一些
 
@@ -202,7 +202,7 @@ struct DoublePointer{
 ```
 
 
-# #单调栈
+# 单调栈
 
 ```cpp
 // 定义一个结构体 MSTACK，用来解决问题
@@ -257,7 +257,7 @@ struct MSTACK{
 } mstk;
 ```
 
-# #树状数组
+# 树状数组
 
 add(x,d)：将位置 x 的值增加 d（单点修改）
 ask(x)：查询从 1 到 x 的区间和（前缀和）
@@ -293,7 +293,7 @@ struct Fenwick_Tree {
 };
 ```
 
-# #线段树模板
+# 线段树模板
 
 线段树是一种分治数据结构
 
@@ -378,7 +378,7 @@ struct SEGMENT {
 }seg;
 ```
 
-# #权值线段树动态开点（线段树上二分）
+# 权值线段树动态开点（线段树上二分）
 
 代码功能概述：
 1. 构建了一个权值线段树，用于处理一系列查询与更新操作。
@@ -470,7 +470,7 @@ struct Weighted_SEGMENT {
 } wseg;  // 定义权值线段树对象
 ```
 
-# #线段树基础版2
+# 线段树基础版2
 
 ```cpp
 // 线段树结构体
@@ -561,7 +561,7 @@ struct W_seg {
 } ; // 创建线段树实例
 ```
 
-# #可持久化线段树（主席树）
+# 可持久化线段树（主席树）
 
 ```cpp
 struct Persistent_SEG {
@@ -621,7 +621,7 @@ struct Persistent_SEG {
 };
 ```
 
-# #Splay模板
+# Splay模板
 
 ```cpp
 struct SPLAY {
@@ -735,7 +735,7 @@ struct SPLAY {
 }bst;
 ```
 
-# #Treap平衡树
+# Treap平衡树
 
 **再某些情况下Treap能取代 -可持久化线段树- 和 -线段树-**
 
@@ -1069,7 +1069,7 @@ struct FHQ_Treap {
 };
 ```
 
-# #树链剖分
+# 树链剖分
 
 初始化函数
 dfs1(1,0,1);
@@ -1214,7 +1214,7 @@ struct Link_Cut_Tree {
 }ctr;
 ```
 
-# #LCT
+# LCT
 
 功能：动态加边，动态删边，动态求某个路径上点的信息（只能维护树，不能有环，有环要破环）
 
@@ -1417,7 +1417,7 @@ struct LCT {
 } st;
 ```
 
-# #ST表
+# ST表
 
 ```cpp
 struct SparseTable {
@@ -1467,7 +1467,7 @@ struct SparseTable {
 } ST;
 ```
 
-# #并查集
+# 并查集
 
 ```cpp
 // 并查集 (Disjoint Set Union) 数据结构，用于维护点之间的连通性
@@ -1496,7 +1496,7 @@ struct DSU {
 };
 ```
 
-# #三分搜索
+# 三分搜索
 
 如果需要求出单峰函数的极值点，通常需要使用三分法
 ```cpp
@@ -1524,7 +1524,7 @@ struct  Ternary_Search{
 ```
 
 
-# #字符串Hash
+# 字符串Hash
 
 **一维字符串Hash**
 注意：一维字符串Hash与下面的二维字符串Hash存在区别：这里一维字符串Hash写的时候没有按照直觉去写，这里***从左到右是高位到低位***。下面的二维字符串Hash则是***从左到右是低位到高位***。
@@ -1637,7 +1637,7 @@ struct HASH_2{
 ```
 
 
-# #双Hash
+# 双Hash
 
 ```cpp
 struct HH{//使用时记得拆出来用
@@ -1687,7 +1687,7 @@ struct HH{//使用时记得拆出来用
 }H;
 ```
 
-# #基环树找环 #树上hash
+# 基环树找环 #树上hash
 
 ```cpp
 // 用于寻找环的结构体
@@ -1813,7 +1813,7 @@ struct FIND_CIRCLE {
 } ; 
 ```
 
-# #EX_KMP(Z函数)
+# EX_KMP(Z函数)
 
 Z 函数 z[i] 表示字符串 s 从位置 i 开始的后缀和 s 的前缀的最长公共前缀长度
 
@@ -1899,7 +1899,7 @@ struct EXKMP {
 }exkmp;
 ```
 
-# #KMP
+# KMP
 
 next 数组：next[i] 表示模式串 p[1] 到 p[i] 的最长相同前后缀的长度，用于在匹配失败时跳过一些字符，从而提高匹配效率。
 
@@ -1944,7 +1944,7 @@ struct KMP {
 }kmp;
 ```
 
-# #TRIE
+# TRIE
 
 ```cpp
 // 字典树结构体 TRIE
@@ -1986,7 +1986,7 @@ struct TRIE {
 };
 ```
 
-# #AC自动机（trie图）
+# AC自动机（trie图）
 
 AC 自动机可以高效地在文本串中查找多个模式串。通过构建 Trie 树和失败指针，它可以在一次遍历文本串的过程中完成对所有模式串的匹配。
 
@@ -2076,7 +2076,7 @@ struct AC_TRIE {
 };
 ```
 
-# #AC自动机拓扑优化
+# AC自动机拓扑优化
 
 因为我们的 AC 自动机中，每次匹配，会一直向 fail 边跳来找到所有的匹配，但是这样的效率较低，在某些题目中会超时。
 那么需要如何优化呢？首先需要了解到 fail 指针的一个性质：一个 AC 自动机中，如果只保留 fail 边，那么剩余的图一定是一棵树。
@@ -2189,7 +2189,7 @@ struct AC_TRIE2 {
 ```
 
 
-# #后缀自动机
+# 后缀自动机
 
 应用：
 	检查字符串是否出现
@@ -2295,7 +2295,7 @@ struct SAM {
 }; // 创建后缀自动机实例
 ```
 
-# #后缀数组
+# 后缀数组
 
 时间复杂度 nlogn
 
@@ -2419,7 +2419,7 @@ struct Suffix_Array{
     }
 }sa;
 ```
-# #回文树（回文自动机）
+# 回文树（回文自动机）
 
 回文树中每个节点包含以下信息：
 	fail 指针：指向的是这个节点所代表的回文串的最长回文后缀所对应的节点
@@ -2646,7 +2646,7 @@ struct PAM2 {  // 定义一个结构体 PAM，表示回文自动机
 ```
 
 
-# #Manacher
+# Manacher
 
 求 len[i]:以i为中心的回文串的最大半径
 
@@ -2706,7 +2706,7 @@ struct MANACHAR {
 } mlc;  // 定义一个全局的 MANACHAR 结构体实例 mlc
 ```
 
-# #最小表示法
+# 最小表示法
 
 算法分析：最小表示法
     本题的最小表示法就是找出字符串S的的循环同构串中字典序最小的一个。
@@ -2777,7 +2777,7 @@ struct Minimal_Representation{
 };
 ```
 
-# #点分治
+# 点分治
 
 我们先随意选择一个节点作为根节点 rt，所有完全位于其子树中的路径可以分为两种，一种是经过当前根节点的路径，
 一种是不经过当前根节点的路径。对于经过当前根节点的路径，又可以分为两种，一种是以根节点为一个端点的路径，
@@ -2900,7 +2900,7 @@ struct Centroid_Decomposition{
 };
 ```
 
-# #LCA(倍增)
+# LCA(倍增)
 
 倍增算法的预处理时间复杂度为 O(n log n)，单次查询时间复杂度为 O(log n)。
 
@@ -2960,7 +2960,7 @@ struct LCA{
 };
 ```
 
-# #LCA(RMQ)
+# LCA(RMQ)
 
 对一棵树进行 DFS，无论是第一次访问还是回溯，每次到达一个结点时都将编号记录下来，可以得到一个长度为 2n-1 的序列，这个序列被称作这棵树的欧拉序列。
 
@@ -3034,7 +3034,7 @@ struct RMQ_LCA {
 } ;
 ```
 
-# #kruskal重构树(倍增)
+# kruskal重构树(倍增)
 
 kruskal重构树有几条重要的性质：
  1.树上除叶子结点以外的点都对应着原来生成树中的边，叶子结点就是原来生成树上的节点。
@@ -3135,7 +3135,7 @@ struct KRUSKAL {
 } ; // Kruskal 实例
 ```
 
-# #tarjan强连通分量算法
+# tarjan强连通分量算法
 
 它的时间复杂度是 O(V + E)，其中：
 V 表示图中的顶点数量（vertices）。
@@ -3226,7 +3226,7 @@ struct TARJAN1 {
 } ;
 ```
 
-# #tarjan桥
+# tarjan桥
 
 low_v=dfn_u 表示还可以回到父节点，如果顶点 v 不能回到祖先也没有另外一条回到父亲的路，那么 u-v 这条边就是割边。
 
@@ -3270,7 +3270,7 @@ struct BRIDGE{
 };
 ```
 
-# #边的双连通分量
+# 边的双连通分量
 
 求边双连通分量的过程实际上就是求强连通分量的过程，时间复杂度 O(n+m)。
 （们先总结出一个重要的性质，在无向图中，DFS 生成树上的边不是树边就只有非树边。
@@ -3331,7 +3331,7 @@ struct TARJAN2 {
 
 
 
-# #Dijkstra
+# Dijkstra
 
 ```cpp
 struct DIJKSTRA {
@@ -3365,7 +3365,7 @@ struct DIJKSTRA {
 };
 ```
 
-# #spfa
+# spfa
 
 ```cpp
 struct SPFA{
@@ -3408,7 +3408,7 @@ struct SPFA{
 };
 ```
 
-# #网络流
+# 网络流
 
 令 $G = (V, E)$ 是一个有源汇点的网络，我们希望在 $G$ 上指定合适的流 $f$，以最大化整个网络的流量 $|f|$（即 $\sum_{x \in V} f(s, x) - \sum_{x \in V} f(x, s)$），这一问题被称作最大流问题（Maximum flow problem）．
 即：网络能流过的最大流量
@@ -3552,7 +3552,7 @@ struct DINIC {
 }dinic;
 ```
 
-# #费用流
+# 费用流
 
 给定一个网络 $G = (V, E)$，每条边除了有容量限制 $c(u, v)$，还有一个单位流量的费用 $w(u, v)$．当 $(u, v)$ 的流量为 $f(u, v)$ 时，需要花费 $f(u, v) \times w(u, v)$ 的费用．$w$ 也满足斜对称性，即 $w(u, v) = -w(v, u)$．则该网络中总花费最小的最大流称为 **最小费用最大流**，即在最大化 $\sum_{(s, v) \in E} f(s, v)$ 的前提下最小化 $\sum_{(u, v) \in E} f(u, v) \times w(u, v)$．
 
@@ -3626,7 +3626,7 @@ struct EK_SuanFa {
 	}
 }ek;
 ```
-# #匈牙利算法
+# 匈牙利算法
 
 返回最小权完美匹配的代价
 
@@ -3737,7 +3737,7 @@ void solve(){
 }
 ```
 
-# #数位dp
+# 数位dp
 
 数位dp得dfs写法，优点：思路简单，边写边想，套路化（尽量将所有出现过的状态都存入 f 数组内）
 在此模板中，由于f[20][7][2]即使dfs的搜索空间，所以时间复杂度就是f[20][7][2]的大小
@@ -3786,7 +3786,7 @@ struct DIGIT_DP {
 }DP;
 ```
 
-# #质数筛(// 初始化函数，使用埃拉托斯特尼筛法生成素数表)
+# 质数筛(// 初始化函数，使用埃拉托斯特尼筛法生成素数表)
 
 ```cpp
 struct PRIME {
@@ -3811,7 +3811,7 @@ struct PRIME {
 }Prime;
 ```
 
-# #质因数分解
+# 质因数分解
 
 ## 试除法
 这个模板采用的是最经典且高效的 $O(\sqrt{n})$ 试除法，适用于处理 $n \le 10^{14}$ 左右的单次分解，或者是像 Codeforces 这种 $n \le 10^9$ 且有多个测试点的情况。
@@ -3983,7 +3983,7 @@ void demo() {
 }
 ```
 
-# #莫比乌斯反演
+# 莫比乌斯反演
 
 \(\mu(n)\)（莫比乌斯函数）的定义如下：
 
@@ -4067,7 +4067,7 @@ struct Mobius {
 };
 ```
 
-# #快速幂
+# 快速幂
 
 ```cpp
 LL qpow(LL a,LL b,LL p){
@@ -4081,7 +4081,7 @@ LL qpow(LL a,LL b,LL p){
 }
 ```
 
-# #模运算类：MInt
+# 模运算类：MInt
 
 ```cpp
 // template<int MOD>
@@ -4187,7 +4187,7 @@ void solve(){
 */
 ```
 
-# #排列函数
+# 排列函数
 
 ```cpp
 struct Next_Permutation{
@@ -4206,7 +4206,7 @@ struct Next_Permutation{
 };
 ```
 
-# #组合数模板
+# 组合数模板
 
 ```cpp
 struct Combination_Number{
@@ -4250,7 +4250,7 @@ struct Combination_Number{
 };
 ```
 
-# #O(n)时间求逆元
+# O(n)时间求逆元
 <!--
 新学的一个求逆元的方法：
 
@@ -4308,7 +4308,7 @@ struct inverse{
 };
 ```
 
-# #随机化
+# 随机化
 
 ```cpp
 struct Randomized {
@@ -4322,7 +4322,7 @@ struct Randomized {
 };
 ```
 
-# #gcd
+# gcd
 
 
 gcd(a1,a2,a3,……,ak)=gcd(a1,a2-a1,a3-a2,……,ak-ak-1);
@@ -4335,7 +4335,7 @@ int gcd(int a, int b) {
 }
 ```
 
-# #拓展欧几里得(exgcd)
+# 拓展欧几里得(exgcd)
 
 
 
@@ -4466,7 +4466,7 @@ void solve() {
 
 
 
-# #蕴含表达式
+# 蕴含表达式
 
 p        q        p⇒q
 
@@ -4475,7 +4475,7 @@ p        q        p⇒q
 假 (F)   真 (T)   真 (T)
 假 (F)   假 (F)   真 (T)
 
-# #卢卡斯定理
+# 卢卡斯定理
 
 对于质数 \(p\)，有：\[ C(n, m) \mod p = C\left(\left\lfloor \frac{n}{p} \right\rfloor, \left\lfloor \frac{m}{p} \right\rfloor\right) \times C(n \mod p, m \mod p) \mod p \]
 
@@ -4496,18 +4496,18 @@ struct LUCAS {
 }Lucas;
 ```
 
-# #威尔逊定理
+# 威尔逊定理
 
 根据威尔逊定理当j为质数时，(j-1)!%j=j-1
 
-# #曼哈顿距离和切比雪夫距离
+# 曼哈顿距离和切比雪夫距离
 
 曼哈顿距离: dist=abs(x2-x1)+abs(y2-y1)
 切比雪夫距离: dist=max(abs(x2-x1),abs(y2-y1))
 将一个点（x,y）的坐标变为（x+y,x-y）后,原坐标系中的曼哈顿距离 = 新坐标系中的切比雪夫距离
 将一个点（x,y）的坐标变为（(x+y)/2,(x-y)/2）后,原坐标系中的切比雪夫距离 = 新坐标系中的曼哈顿距离
 
-# #二项式反演
+# 二项式反演
 
 当：\[ b[n] = \sum_{k=0}^{n} c(k, n) \cdot a[k] \]
 
@@ -4515,7 +4515,7 @@ struct LUCAS {
 
 这个公式被称为二项式反演。
 
-# #数学trick
+# 数学trick
 
 ***充分条件 = 所有的必要条件 + 一个能跑通的构造方案。***
 
@@ -4554,7 +4554,7 @@ $$y \equiv d(y) \pmod 9$$
 **9. 引理（伯特兰猜想，Bertrand's postulate）**:
 对于任意正整数 $x$，在区间 $[x,2x]$ 内一定存在一个质数 $p$。
 
-# #运算符重载
+# 运算符重载
 
 ```cpp
 struct Overloading{
@@ -4572,7 +4572,7 @@ struct Overloading{
     set<ACM,cmp>st;
 }
 ```
-# #bitset
+# bitset
 
 `bitset` 是 C++ 标准库中的一个模板类，用于存储和操作二进制位（bit）。`bitset` 提供了高效的位操作功能，类似于数组但专门处理位。
 
